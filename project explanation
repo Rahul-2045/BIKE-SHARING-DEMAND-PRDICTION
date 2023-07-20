@@ -35,10 +35,12 @@ Unicode is an international character encoding standard that provides a unique n
 After that, we extracted Day, month, and year from the date column to gain more clarity regarding the dataset.
 
 2.EDA Insights and feature Eng.
-In the exploratory data analysis (EDA) phase of our analysis, we divided the dataset into two parts: numerical features and categorical features. For the numerical features, we further divided them into discrete and continuous features.
+In the exploratory data analysis (EDA) phase of our analysis, first we have to clean the raw data like we check shape it gives how many rows and column in our dataset basically 8760 rows and 14 column we have in the dataset . we check head it give first five row and column ,and after that we check  Handling  duplicate value so we 0 duplicate value in our dataset and after we check null values  I found there is no null values in our data set  . so we don’t want to impute the data .we use info() function it gives what are the datatypes of my all columns written here .  After that  we check  describe function in machine learning provides summary statistics like count, mean, standard deviation, min, 25th percentile, median, 75th percentile, and max for numerical data, giving a quick overview of the dataset's distribution and central tendencies. It helps in understanding the data's characteristics and making informed decisions during data preprocessing and modeling. 
 To visualize the distribution and skewness of the continuous features, we used histograms. A histogram is a graphical representation of the distribution of a continuous variable. By looking at the histogram, we can get an idea of the shape of the distribution and whether it is skewed to the left or right.
-We found that our dependent variable, rented bike count, was right skewed, meaning that it had a longer tail on the right side of the distribution. To make the distribution more normal, we applied a log-square transformation to the data. A log-square transformation is a mathematical function that maps the data onto a new scale, typically to reduce skewness and improve the normality of the distribution.
+We found that our dependent variable, rented bike count, was right skewed, meaning that it had a longer tail on the right side of the distribution.
 For discrete and categorical features, we used bar plots to visualize their distribution and understand their relationships with other variables.
+Feature manipulation It involves transforming and creating new features  like (month ,year week) from the existing data to improve the performance of the machine learning models.
+Feature selection Let's see how Rented Bike Count and other features are related . we can visulaize the graph through rented bike count compare to all feature.
 Finally, we used a heat map to plot the correlation between the dependent variable and a set of independent variables. 
 Overall, our exploratory data analysis helped us gain a better understanding of the dataset and identify potential issues that needed to be addressed before moving on to modeling. 
 we checked for multicollinearity between the independent features by calculating the variance inflation factor (VIF) for each feature, We removed features that had a VIF score greater than 10, as they were considered highly correlated and potentially irrelevant to our dataset. By removing these features, we were able to improve the stability and reliability of our model.
@@ -55,7 +57,6 @@ After completing the data preprocessing and feature transformation steps, we spl
 
 3. Model selection
 During the  model selection, we trained several different machine learning models on the dataset, including linear, lasso, ridge, decision tree, random forest, and XG boost algorithms. After comparing their performance, we selected a random forest as the final model for the task.
-
 4.MODEL EVALUATION
 To evaluate the performance of the models, we used two evaluation metrics: the R2 score and root mean squared error (RMSE). The R2 score is a measure of the amount of variance in the data that is explained by the model, while RMSE is a measure of the average difference between the predicted values and the true values.
 After evaluating the models using these metrics, we found that the linear, lasso, and ridge models did not perform well, while the decision tree model performed well but had high variance and low bias, indicating that it was overfitted.
@@ -63,11 +64,8 @@ To reduce the variance and improve the performance of the model, we used the ran
 However, even after applying random forest, there was still some overfitting in the model. To further reduce overfitting and improve the performance of the model, we performed hyperparameter tuning using grid search cross-validation
 (GridSearchCV). This helped us find the optimal combination of hyperparameters for the model and improve the R2
 score by approximately 1%.
-
 Final Conclusion:
 Most numbers of Bikes were rented in Summer, followed by Autumn, Spring, and Winter. May-July is the peak Bike renting Season, and Dec-Feb is the least preferred month for bike renting. 
 Majority of the client in the bike rental sector belongs to the Working class. This is evident from EDA analysis where bike demand is more on weekdays, working days in Seoul. •
 Temperature of 20-30 Degrees, evening time 4 pm-8 pm Humidity between 40%-60% are the most favourable parameters where the Bike demand is at its peak. 
  Temperature, Hour of the day, Solar radiation, and Humidity are major driving factors for the Bike rent demand.
-When the rainfall was less, people have booked more bikes except some few cases.
-

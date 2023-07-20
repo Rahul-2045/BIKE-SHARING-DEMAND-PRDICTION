@@ -102,7 +102,7 @@ In general, one hot encoding is preferred over label encoding when working with 
 After completing the data preprocessing and feature transformation steps, we split our dataset into a training set and a validation set. The training set was used to train our machine learning models, while the validation set was used to evaluate the performance of the trained models.
 
 3. Model selection
-4. 
+   
 During the  model selection, we trained several different machine learning models on the dataset, including linear, lasso, ridge, decision tree, random forest, and XG boost algorithms. After comparing their performance, we selected a random forest as the final model for the task.
 
 4.MODEL EVALUATION

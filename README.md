@@ -51,6 +51,7 @@ Model selection
 Model evaluation
 
 1.Data preparation
+
 Source of data, challenges in the data, and steps are taken for resolution
 
 source of data - dataset has been provided by alma-better.
@@ -62,6 +63,7 @@ Unicode is an international character encoding standard that provides a unique n
 After that, we extracted Day, month, and year from the date column to gain more clarity regarding the dataset.
 
 2.EDA Insights and feature Eng.
+
 In the exploratory data analysis (EDA) phase of our analysis, first we have to clean the raw data like we check shape it gives how many rows and column in our dataset basically 8760 rows and 14 column we have in the dataset . we check head it give first five row and column ,and after that we check  Handling  duplicate value so we 0 duplicate value in our dataset and after we check null values  I found there is no null values in our data set  . so we don’t want to impute the data .we use info() function it gives what are the datatypes of my all columns written here .  After that  we check  describe function in machine learning provides summary statistics like count, mean, standard deviation, min, 25th percentile, median, 75th percentile, and max for numerical data, giving a quick overview of the dataset's distribution and central tendencies. It helps in understanding the data's characteristics and making informed decisions during data preprocessing and modeling. 
 
 To visualize the distribution and skewness of the continuous features, we used histograms. A histogram is a graphical representation of the distribution of a continuous variable. By looking at the histogram, we can get an idea of the shape of the distribution and whether it is skewed to the left or right.
@@ -100,9 +102,11 @@ In general, one hot encoding is preferred over label encoding when working with 
 After completing the data preprocessing and feature transformation steps, we split our dataset into a training set and a validation set. The training set was used to train our machine learning models, while the validation set was used to evaluate the performance of the trained models.
 
 3. Model selection
+4. 
 During the  model selection, we trained several different machine learning models on the dataset, including linear, lasso, ridge, decision tree, random forest, and XG boost algorithms. After comparing their performance, we selected a random forest as the final model for the task.
 
 4.MODEL EVALUATION
+
 To evaluate the performance of the models, we used two evaluation metrics: the R2 score and root mean squared error (RMSE). The R2 score is a measure of the amount of variance in the data that is explained by the model, while RMSE is a measure of the average difference between the predicted values and the true values.
 
 After evaluating the models using these metrics, we found that the linear, lasso, and ridge models did not perform well, while the decision tree model performed well but had high variance and low bias, indicating that it was overfitted.

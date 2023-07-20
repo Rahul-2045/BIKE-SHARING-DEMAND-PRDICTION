@@ -1,14 +1,11 @@
 # BIKE-SHARING-DEMAND-PRDICTION
-BIKE SHARING DEMAND PRDICTION
 
-CAPSTONE - 2 Seoul Bike Sharing Demand
-Prediction
+# Prediction
 
 So the first project is of regression in which we have to predict the number of bikes that can be rented per hour by the company.
 
-•	Business use case, Business impact
+# 	Business use case, Business impact
 
-Problem Description-
 
 Currently, Rental bikes are introduced in many urban cities for the enhancement of mobility comfort. It is important to make the rental bike available and accessible to the public at the right time as it reduces waiting time. Eventually, providing the city with a stable supply of rental bikes becomes a major concern. The crucial part is the prediction of the bike count required at each hour for the stable supply of rental bikes.
 
@@ -50,7 +47,7 @@ Model selection
 
 Model evaluation
 
-1.Data preparation
+# 1.Data preparation
 
 Source of data, challenges in the data, and steps are taken for resolution
 
@@ -62,7 +59,7 @@ Unicode is an international character encoding standard that provides a unique n
 
 After that, we extracted Day, month, and year from the date column to gain more clarity regarding the dataset.
 
-2.EDA Insights and feature Eng.
+# 2.EDA Insights and feature Eng.
 
 In the exploratory data analysis (EDA) phase of our analysis, first we have to clean the raw data like we check shape it gives how many rows and column in our dataset basically 8760 rows and 14 column we have in the dataset . we check head it give first five row and column ,and after that we check  Handling  duplicate value so we 0 duplicate value in our dataset and after we check null values  I found there is no null values in our data set  . so we don’t want to impute the data .we use info() function it gives what are the datatypes of my all columns written here .  After that  we check  describe function in machine learning provides summary statistics like count, mean, standard deviation, min, 25th percentile, median, 75th percentile, and max for numerical data, giving a quick overview of the dataset's distribution and central tendencies. It helps in understanding the data's characteristics and making informed decisions during data preprocessing and modeling. 
 
@@ -101,11 +98,11 @@ In general, one hot encoding is preferred over label encoding when working with 
 
 After completing the data preprocessing and feature transformation steps, we split our dataset into a training set and a validation set. The training set was used to train our machine learning models, while the validation set was used to evaluate the performance of the trained models.
 
-3. Model selection
+# 3. Model selection
    
 During the  model selection, we trained several different machine learning models on the dataset, including linear, lasso, ridge, decision tree, random forest, and XG boost algorithms. After comparing their performance, we selected a random forest as the final model for the task.
 
-4.MODEL EVALUATION
+# 4.MODEL EVALUATION
 
 To evaluate the performance of the models, we used two evaluation metrics: the R2 score and root mean squared error (RMSE). The R2 score is a measure of the amount of variance in the data that is explained by the model, while RMSE is a measure of the average difference between the predicted values and the true values.
 
@@ -118,7 +115,7 @@ However, even after applying random forest, there was still some overfitting in 
 (GridSearchCV). This helped us find the optimal combination of hyperparameters for the model and improve the R2
 score by approximately 1%.
 
-Final Conclusion:
+# Final Conclusion:
 Most numbers of Bikes were rented in Summer, followed by Autumn, Spring, and Winter.
 May-July is the peak Bike renting Season, and Dec-Feb is the least preferred month for bike renting. 
 

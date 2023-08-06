@@ -130,6 +130,9 @@ Temperature of 20-30 Degrees, evening time 4 pm-8 pm Humidity between 40%-60% ar
  Temperature, Hour of the day, Solar radiation, and Humidity are major driving factors for the Bike rent demand.
 
  For complete project video explaination and to downoad the dataset:https://drive.google.com/file/d/1nFzScMpwv5hQXZM60koJxCAWWPj0vOk_/view?usp=sharing
+ 
  Feel free to explore the repository to gain further insights into the code implementation, methodology, and findings.
+ 
  Connect with me on www.linkedin.com/in/rahul-verma-
+ 
  Happy Learning!

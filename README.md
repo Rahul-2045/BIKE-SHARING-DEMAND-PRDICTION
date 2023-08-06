@@ -116,7 +116,7 @@ To reduce the variance and improve the performance of the model, we used the ran
 However, even after applying random forest, there was still some overfitting in the model. To further reduce overfitting and improve the performance of the model, we performed hyperparameter tuning using grid search cross-validation
 
 (GridSearchCV). This helped us find the optimal combination of hyperparameters for the model and improve the R2
-score by approximately 1%.
+score by approximately 93%.
 
 # Final Conclusion:
 Most numbers of Bikes were rented in Summer, followed by Autumn, Spring, and Winter.
